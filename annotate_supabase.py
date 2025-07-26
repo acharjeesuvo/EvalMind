@@ -12,7 +12,7 @@ PG_CONFIG = {
     "user": st.secrets["db"]["user"],
     "password": st.secrets["db"]["password"],
     "host": st.secrets["db"]["host"],
-    "port": "5432"
+    "port": st.secrets["db"]["port"]
 
 }
 
