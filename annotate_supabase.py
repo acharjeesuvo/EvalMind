@@ -9,7 +9,7 @@ from PIL import Image
 # PostgreSQL Configuration
 PG_CONFIG = {
     "host": st.secrets["db"]["host"],
-    "port": 5432,
+    "port": "5432",
     "dbname": st.secrets["db"]["dbname"],
     "user": st.secrets["db"]["user"],
     "password": st.secrets["db"]["password"]
