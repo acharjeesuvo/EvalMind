@@ -8,11 +8,11 @@ from PIL import Image
 
 # PostgreSQL Configuration
 PG_CONFIG = {
-    "dbname": st.secrets["db"]["dbname"],
-    "user": st.secrets["db"]["user"],
-    "password": st.secrets["db"]["password"],
-    "host": st.secrets["db"]["host"],
-    "port": st.secrets["db"]["port"]
+    "dbname": st.secrets["dbname"],
+    "user": st.secrets["user"],
+    "password": st.secrets["password"],
+    "host": st.secrets["host"],
+    "port": st.secrets["port"]
 
 }
 
