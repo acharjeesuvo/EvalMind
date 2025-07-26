@@ -15,7 +15,7 @@ def connection_check():
     try:
         conn = psycopg2.connect(**SUPABASE_DB_CONFIG)
         cur = conn.cursor()
-        print("✅ Connected successfully into Supabase.")
+        st.header("✅ Connected successfully into Supabase.")
         cur.close()
         conn.close()
     except Exception as e:
