@@ -130,12 +130,12 @@ def main():
 
     image_name, tweet_text, llm_reasoning = row
     st.header("🖼️ Image Annotation")
-    image_path = os.path.join("images", image_name)
-    if os.path.exists(image_path):
-        st.image(image_path, width=400)
-    else:
-        st.error(f"Image not found: {image_name}")
-
+    image_path = f"images/{image_name}"
+    try:
+        st.image(image_path, width=400, caption=image_name)
+    except Exception as e:
+        st.error(f"Could not load image: {image_name} — {e}")
+    
     st.markdown(f"**Tweet Text:** {tweet_text}")
     st.markdown(f"**LLM Reasoning:** {llm_reasoning}")
 
