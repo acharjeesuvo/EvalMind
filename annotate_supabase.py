@@ -130,7 +130,7 @@ def main():
 
     image_name, tweet_text, llm_reasoning = row
     st.header("🖼️ Image Annotation")
-    image_path = f"images/{image_name}"
+    image_path = f"{image_name}"
     try:
         st.image(image_path, width=400, caption=image_name)
     except Exception as e:
